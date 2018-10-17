@@ -18,13 +18,24 @@ public class AppTest
     /**
      * Rigorous Test :-)
      */
+    public static WebDriver driver;
     @Test
     public void shouldAnswerWithTrue()
     {
         assertTrue( true );
+        String URL = "http://www.google.com";
+     		String Node = "http://10.10.10.232:9090/wd/hub";
+     		DesiredCapabilities cap = DesiredCapabilities.chrome();
+     
+     		driver = new RemoteWebDriver(new URL(Node), cap);
+     
+     		driver.navigate().to(URL);
+            System.out.println("Opening Chrome");
+     		Thread.sleep(5000);
+     		driver.quit();
     }
     
-    	public static WebDriver driver;
+    	
      
     	public static void main(String[]  args) throws MalformedURLException, InterruptedException{
      
