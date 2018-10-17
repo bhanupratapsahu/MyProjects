@@ -20,7 +20,7 @@ public class AppTest
      */
     public static WebDriver driver;
     @Test
-    public void shouldAnswerWithTrue()
+    public void shouldAnswerWithTrue() throws MalformedURLException, InterruptedException
     {
         assertTrue( true );
         String URL = "http://www.google.com";
