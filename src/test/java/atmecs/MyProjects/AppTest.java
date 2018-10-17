@@ -29,7 +29,7 @@ public class AppTest
     	public static void main(String[]  args) throws MalformedURLException, InterruptedException{
      
      		String URL = "http://www.google.com";
-     		String Node = "http://55.55.52.175:4444/wd/hub";
+     		String Node = "http://10.10.10.232:9090/wd/hub";
      		DesiredCapabilities cap = DesiredCapabilities.chrome();
      
      		driver = new RemoteWebDriver(new URL(Node), cap);
