@@ -35,6 +35,7 @@ public class AppTest
      		driver = new RemoteWebDriver(new URL(Node), cap);
      
      		driver.navigate().to(URL);
+            System.out.println("Opening Chrome");
      		Thread.sleep(5000);
      		driver.quit();
      	}		
